@@ -1414,6 +1414,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   var App = function App() {
     return _react2.default.createElement(_header2.default, {
+      headerText: 'Albums',
       __source: {
         fileName: _jsxFileName,
         lineNumber: 24
@@ -58279,14 +58280,26 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
     var style = {
         viewStyle: {
-            backgroundColor: '#F8F8F8'
+            backgroundColor: '#F8F8F8',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: 60,
+            paddingTop: 15,
+            shadowColor: '#000',
+            shadowOffset: {
+                width: 0,
+                height: 2
+            },
+            shadowOpacity: 0.2,
+            elevation: 2,
+            position: 'relative'
         },
         textStyle: {
             fontSize: 20
         }
     };
 
-    var Header = function Header() {
+    var Header = function Header(props) {
         var textStyle = style.textStyle,
             viewStyle = style.viewStyle;
         return _react2.default.createElement(
@@ -58295,7 +58308,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                 style: viewStyle,
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 18
+                    lineNumber: 28
                 }
             },
             _react2.default.createElement(
@@ -58304,10 +58317,10 @@ __d(function (global, require, module, exports, _dependencyMap) {
                     style: textStyle,
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 19
+                        lineNumber: 29
                     }
                 },
-                "Albums"
+                props.headerText
             )
         );
     };

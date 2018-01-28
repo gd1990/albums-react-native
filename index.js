@@ -21,7 +21,7 @@ import Header from './src/components/header.js';
 //
 // };
 const App = () => (
-  <Header />
+  <Header headerText = {'Albums'} />
 );
 // adb shell date -s $(get-date -format yyyyMMdd.HHmmss)
 //Render it on the device
