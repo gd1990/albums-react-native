@@ -5,8 +5,9 @@
 //
 // AppRegistry.registerComponent('albums', () => App);
 import React from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 import Header from './src/components/header.js';
+import AlbumList from './src/components/AlbumList';
 
 
 
@@ -21,7 +22,10 @@ import Header from './src/components/header.js';
 //
 // };
 const App = () => (
-  <Header headerText = {'Albums'} />
+  <View>
+    <Header headerText={'Albums'} />
+    <AlbumList/>
+  </View>
 );
 // adb shell date -s $(get-date -format yyyyMMdd.HHmmss)
 //Render it on the device

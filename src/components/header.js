@@ -20,7 +20,7 @@ const style = {
         fontSize: 20
     }
 };
-
+// const{ isReturning, departureDate } = this.props
 //Make a Component
 const Header = (props) => {
     const { textStyle, viewStyle } = style;
